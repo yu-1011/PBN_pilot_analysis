@@ -5,7 +5,7 @@ Imputation is implemented in the Terra workspace. It hosts workflows and example
 
 The input to this workflow can be either single-sample or multi-sample VCFs with existing GT and PL annotations or CRAMs, in which case GLIMPSE2 will calculate the PLs using pileup calling.
 
-### output
+### Output
 - File imputed_vcf: Single, multi-sample imputed VCF that covers all regions defined in the contig_regions input in GlimpseSplitReference. The name of the file is the basename of input_vcf with .imputed.vcf.gz added.
 - File imputed_vcf_index: Index to imputed_vcf.
 
