@@ -40,22 +40,13 @@ For X chromosome: Khramtsova, Ekaterina A., et al. "Quality control and analytic
   - Prune to < 100K independent SNPs
   - Merge with 1KG reference
 
-### Prepare Data for TopMed/Singapore 50k Imputation Server
-- Harmonize study data with HRC data
-- Convert plink to vcf by chromosome
-
-### Send Unrelated East Asian Samples to TOPMed Server for Imputation
-- Chromosome X:
-  - Ploidy Check: Verifies if all variants in the nonPAR region are either haploid or diploid.
-  - Mixed Genotypes Check: Verifies if the number of mixed genotypes (e.g., 1/.) is < 10 %.
-
 ### Post-imputation QC (Converting vcf dosages to plink hard-call genotypes)
 - INFO score/Imputation R2: > 0.8
 - MAF (based on imputed dosages): > 1%
 - HWE: > 1e-10
 - SNP-level call rate: > 0.98
 
-### Population Assignment After imputation
+### Population Assignment After Imputation
 - Select common, high-quality SNPs for population inference:
   - SNP-level call rate > 0.98
   - Remove strand ambiguous SNPs and long-range LD regions (chr6:25-35Mb; chr8:7-13Mb inversion)
