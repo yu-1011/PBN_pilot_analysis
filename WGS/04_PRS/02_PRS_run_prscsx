@@ -1,0 +1,26 @@
+#!/bin/bash
+
+CHROMOSOMES=($(seq 1 22))
+N=0
+
+for chr in "${CHROMOSOMES[@]}"; do
+  python /home/yu/software/PRScsx/PRScsx.py \
+    --ref_dir=/home/yu/mount-folder/proj-PBN/02_PRS/02_LD_ref/ \
+    --bim_prefix=/home/yu/mount-folder/proj-PBN/02_PRS/03_target_geno/scz_pbn_pilot_yc_unrel_qc_final_rsid \
+    --sst_file=/home/yu/mount-folder/proj-PBN/02_PRS/01_GWAS/PGC3_SCZ_afram_PRScsx_input.txt,/home/yu/mount-folder/proj-PBN/02_PRS/01_GWAS/PGC3_SCZ_asian_PRScsx_input.txt,/home/yu/mount-folder/proj-PBN/02_PRS/01_GWAS/PGC3_SCZ_euro_PRScsx_input.txt \
+    --n_gwas=9824,27363,127906 \
+    --pop=AFR,EAS,EUR \
+    --out_dir=/home/yu/mount-folder/proj-PBN/02_PRS/04_model_training/ \
+    --meta=TRUE \
+    --write_pst=TRUE \
+    --phi=1e-2 \
+    --chr=$chr \
+    --out_name=PBN_pilot_test_chr${chr} &
+
+  let N+=1
+  if (( N % 3 == 0 )); then
+    wait  
+  fi
+done
+
+wait 
