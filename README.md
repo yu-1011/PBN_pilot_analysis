@@ -7,23 +7,6 @@ End-to-end pilot analyses for the Psychiatric Biomarker Network (PBN): data inta
 
 ---
 
-## Table of Contents
-- [Overview](#overview)
-- [Repo Structure](#repo-structure)
-- [Getting Started](#getting-started)
-- [Environment & Dependencies](#environment--dependencies)
-- [Inputs & Expected Layout](#inputs--expected-layout)
-- [Workflows](#workflows)
-  - [WES](#wes)
-  - [WGS](#wgs)
-- [Results & Reproducibility](#results--reproducibility)
-- [Project Notes](#project-notes)
-- [Contributing](#contributing)
-- [Citations](#citations)
-- [License](#license)
-
----
-
 ## Overview
 
 This repository hosts pilot pipelines and notebooks used to:
@@ -38,8 +21,11 @@ Code is primarily in Jupyter notebooks (≈77%), with helper scripts in Shell (�
 
 ## Repo Structure
 
+## Repository Structure
+
+```text
 PBN_pilot_analysis/
-├─ WES/ # WES-specific notebooks, QC steps, and helper scripts
-├─ WGS/ # WGS-specific notebooks, QC steps, and helper scripts
+├─ WES/   # WES-specific notebooks, QC steps, and helper scripts
+├─ WGS/   # WGS-specific notebooks, QC steps, and helper scripts
 └─ README.md
 
