@@ -2,6 +2,7 @@
 
 End-to-end pilot analyses for the Psychiatric Biomarker Network (PBN): data intake, QC, and exploratory association workflows across WES and WGS cohorts.
 
+> **Author:** Yu Chen (@yu-1011)  
 > **Status:** active methods sandbox / pilot repo  
 > **Data access:** controlled (PBN / IRB-approved only). No raw data are stored in this repository.
 
