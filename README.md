@@ -1,4 +1,3 @@
-# PBN_analysis
 # PBN_pilot_analysis
 
 End-to-end pilot analyses for the Psychiatric Biomarker Network (PBN): data intake, QC, and exploratory association workflows across WES and WGS cohorts.
