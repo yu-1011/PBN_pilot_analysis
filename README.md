@@ -38,3 +38,8 @@ Code is primarily in Jupyter notebooks (≈77%), with helper scripts in Shell (�
 
 ## Repo Structure
 
+PBN_pilot_analysis/
+├─ WES/ # WES-specific notebooks, QC steps, and helper scripts
+├─ WGS/ # WGS-specific notebooks, QC steps, and helper scripts
+└─ README.md
+
