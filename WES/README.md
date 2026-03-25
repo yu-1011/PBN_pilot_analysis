@@ -1,4 +1,4 @@
-#hail dataproc
+# hail dataproc
 hailctl dataproc start ychen-wes \
 --project 'pbn-analysis'  \
 --vep GRCh38 --requester-pays-allow-all --requester-pays-allow-annotation-db \
